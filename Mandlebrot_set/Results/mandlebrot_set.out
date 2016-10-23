@@ -1,0 +1,29 @@
+SLURM_JOBID=5932638
+SLURM_JOB_NODELIST=cpn-k13-40-01
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/5932638
+working directory = /user/sbhatt2/HPC/assignment_2/q2
+
+Currently Loaded Modules:
+  1) lmod/6.0.1   2) StdEnv   3) intel/16.0   4) papi/5.4.3   5) gcc/5.4.0
+
+Mandlebrot Set: \n
+ Running Mandlebrotset Problem... 
+g++ -O2 -fopenmp timer.C mand_set_omp.cpp -o mand_omp
+g++ -O2 -fopenmp timer.C mand_set_omp_d.cpp -o mand_omp_d
+g++ -O2 -fopenmp timer.C mand_set_omp_g.cpp -o mand_omp_g
+g++ -O2 -fopenmp timer.C mand_set_omp_r.cpp -o mand_omp_r
+There are 7 counters in this system
+
+Counter Started: 
+
+Time without omp: 5.99114
+Area of the mandlebrot set =1.5095
+Read successfully
+The total instructions executed for addition are 20876783386 
+The total cycles used are 14252196016 
+The total cache misses are 274536 
+MFlop/s = 0.166913
+The flops: 1845234794 
+ Completed! 
+All Jobs Completed!!!
